@@ -1,4 +1,4 @@
-```markdown
+
 # 🔐 Internal Password Manager
 
 A secure and role-based password manager for internal staff, with real-time access control, request workflows, and audit logs.
@@ -136,4 +136,3 @@ npm run dev
 ## 📄 License
 
 This project is internal and private. For enterprise use only.
-```
