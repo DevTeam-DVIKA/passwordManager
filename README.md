@@ -44,8 +44,6 @@ Each password record includes:
     - New requests
     - Password age
 
----
-
 ## 🧱 Tech Stack
 
 | Layer       | Technology               |
@@ -56,8 +54,6 @@ Each password record includes:
 | Database    | MongoDB                  |
 | Auth        | JWT + Role-based Access  |
 | Encryption  | AES-256 + Bcrypt         |
-
----
 
 ## 🛠️ Installation
 
@@ -76,8 +72,6 @@ cd client
 npm install
 npm run dev
 ```
-
----
 
 ## 📦 Folder Structure
 
@@ -101,23 +95,19 @@ npm run dev
   server.js
 ```
 
----
-
 ## 🔑 API Routes Overview
 
-| Route                  | Method | Role           | Description                          |
-|------------------------|--------|----------------|--------------------------------------|
-| `/api/auth/login`      | POST   | All            | Login with email/password            |
-| `/api/passwords`       | GET    | Super/Admin    | Get all credentials                  |
-| `/api/passwords/:id`   | GET    | Authorized     | View specific credential             |
-| `/api/passwords`       | POST   | Super/Admin    | Add new password                     |
-| `/api/passwords/:id`   | PUT    | Super/Admin    | Update existing credential           |
-| `/api/access-request`  | POST   | User           | Request access to a password         |
-| `/api/access-request`  | GET    | Admin/Super    | View pending access requests         |
-| `/api/access-request/:id/approve` | PUT | Admin/Super | Approve access request |
-| `/api/logs`            | GET    | Admin/Super    | Get access and audit logs            |
-
----
+| Route                                 | Method | Role         | Description                      |
+|---------------------------------------|--------|--------------|----------------------------------|
+| `/api/auth/login`                     | POST   | All          | Login with email/password        |
+| `/api/passwords`                      | GET    | Super/Admin  | Get all credentials              |
+| `/api/passwords/:id`                  | GET    | Authorized   | View specific credential         |
+| `/api/passwords`                      | POST   | Super/Admin  | Add new password                 |
+| `/api/passwords/:id`                  | PUT    | Super/Admin  | Update existing credential       |
+| `/api/access-request`                 | POST   | User         | Request access to a password     |
+| `/api/access-request`                 | GET    | Admin/Super  | View pending access requests     |
+| `/api/access-request/:id/approve`     | PUT    | Admin/Super  | Approve access request           |
+| `/api/logs`                           | GET    | Admin/Super  | Get access and audit logs        |
 
 ## 🔒 Security Practices
 
@@ -127,8 +117,6 @@ npm run dev
 - Real-time Socket.IO for notifications and request workflows
 - Access logs with IP, timestamp, role
 
----
-
 ## 🧪 Future Ideas
 
 - Google Authenticator integration for 2FA
@@ -136,8 +124,6 @@ npm run dev
 - Browser Extension
 - Scheduled auto-rotation for passwords
 - Department-based access control and analytics
-
----
 
 ## 📸 UI Features
 
@@ -147,11 +133,7 @@ npm run dev
 - Real-time toast notifications (React Toastify)
 - Access status icons (Pending, Granted, Denied)
 
----
-
 ## 📄 License
 
 This project is internal and private. For enterprise use only.
-
----
-
+```
